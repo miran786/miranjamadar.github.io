@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Webcrumbs Plugin</title>
+        <style>
+            @import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+            @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+            @import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined);
+            @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+        </style>
+    </head>
+    <body>
+        <div id="webcrumbs">
+            <div class="min-h-screen bg-white">
+                <header class="bg-gradient-to-r from-primary-500 to-primary-700 shadow-lg">
+                    <div class="container mx-auto px-4 py-6">
+                        <nav class="flex justify-between items-center">
+                            <h1
+                                class="text-2xl font-bold text-white hover:scale-105 transition-transform cursor-pointer"
+                            >
+                                Miran Jamadar
+                            </h1>
+                            <ul class="hidden md:flex space-x-8 text-white">
+                                <li><a href="#about" class="hover:text-primary-200 transition-colors">About</a></li>
+                                <li>
+                                    <a href="#experience" class="hover:text-primary-200 transition-colors"
+                                        >Experience</a
+                                    >
+                                </li>
+                                <li><a href="#skills" class="hover:text-primary-200 transition-colors">Skills</a></li>
+                                <li>
+                                    <a href="#projects" class="hover:text-primary-200 transition-colors">Projects</a>
+                                </li>
+                                <li><a href="#contact" class="hover:text-primary-200 transition-colors">Contact</a></li>
+                            </ul>
+                            <details class="md:hidden relative">
+                                <summary class="list-none text-white cursor-pointer">
+                                    <span class="material-symbols-outlined">menu</span>
+                                </summary>
+                                <ul
+                                    class="absolute right-0 mt-2 bg-white shadow-md rounded-md overflow-hidden z-10 w-36"
+                                >
+                                    <li>
+                                        <a href="#about" class="block px-4 py-2 hover:bg-gray-100 transition-colors"
+                                            >About</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#experience"
+                                            class="block px-4 py-2 hover:bg-gray-100 transition-colors"
+                                            >Experience</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#skills" class="block px-4 py-2 hover:bg-gray-100 transition-colors"
+                                            >Skills</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#projects" class="block px-4 py-2 hover:bg-gray-100 transition-colors"
+                                            >Projects</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#contact" class="block px-4 py-2 hover:bg-gray-100 transition-colors"
+                                            >Contact</a
+                                        >
+                                    </li>
+                                </ul>
+                            </details>
+                        </nav>
+                    </div>
+                </header>
+                <section id="hero" class="py-16 bg-gray-50">
+                    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-8 md:mb-0">
+                            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                                Hello, I&#x27;m <span class="text-primary-600">Miran Jamadar</span>
+                            </h2>
+                            <h3 class="text-2xl md:text-3xl text-gray-600 mb-6">Full Stack Developer</h3>
+                            <p class="text-gray-700 mb-8 leading-relaxed">
+                                I build exceptional digital experiences with modern technologies. Passionate about
+                                creating intuitive, high-performance applications that solve real-world problems.
+                            </p>
+                            <div class="flex space-x-4">
+                                <a
+                                    href="#contact"
+                                    class="px-6 py-3 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
+                                    >Get in Touch</a
+                                >
+                                <a
+                                    href="#projects"
+                                    class="px-6 py-3 border border-primary-600 text-primary-600 rounded-md hover:bg-primary-50 transition-colors"
+                                    >View My Work</a
+                                >
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 flex justify-center">
+                            <div
+                                class="relative w-64 h-64 rounded-full overflow-hidden border-4 border-primary-300 shadow-xl transform hover:scale-105 transition-transform"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+                                    alt="Miran Jamadar"
+                                    class="w-full h-full object-cover"
+                                    keywords="professional, portrait, headshot, developer"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="about" class="py-16">
+                    <div class="container mx-auto px-4">
+                        <h2 class="text-3xl font-bold mb-12 text-center">About Me</h2>
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="md:w-1/3 mb-8 md:mb-0">
+                                <div class="sticky top-8">
+                                    <h3 class="text-xl font-semibold mb-4">Personal Information</h3>
+                                    <ul class="space-y-3 text-gray-700">
+                                        <li class="flex items-center">
+                                            <span class="material-symbols-outlined mr-3 text-primary-500"
+                                                >calendar_month</span
+                                            >
+                                            Born: January 15, 1990
+                                        </li>
+                                        <li class="flex items-center">
+                                            <span class="material-symbols-outlined mr-3 text-primary-500"
+                                                >location_on</span
+                                            >
+                                            Location: San Francisco, CA
+                                        </li>
+                                        <li class="flex items-center">
+                                            <span class="material-symbols-outlined mr-3 text-primary-500">mail</span>
+                                            Email: john.doe@example.com
+                                        </li>
+                                        <li class="flex items-center">
+                                            <span class="material-symbols-outlined mr-3 text-primary-500">phone</span>
+                                            Phone: (123) 456-7890
+                                        </li>
+                                    </ul>
+                                    <h3 class="text-xl font-semibold mt-8 mb-4">Connect With Me</h3>
+                                    <div class="flex space-x-4">
+                                        <a
+                                            href="#"
+                                            class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                                        >
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"
+                                        >
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors"
+                                        >
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="w-10 h-10 bg-gray-800 text-white rounded-full flex items-center justify-center hover:bg-black transition-colors"
+                                        >
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-2/3 md:pl-12">
+                                <p class="text-gray-700 mb-6 leading-relaxed">
+                                    I am a passionate Full Stack Developer with over 7 years of experience in building
+                                    web applications. My journey in the world of programming started when I was 15,
+                                    tinkering with HTML and CSS to create simple websites. That early curiosity has
+                                    evolved into a fulfilling career where I get to solve complex problems and create
+                                    intuitive user experiences.
+                                </p>
+                                <p class="text-gray-700 mb-6 leading-relaxed">
+                                    I specialize in JavaScript ecosystems, particularly React for frontend development
+                                    and Node.js for backend services. I&#x27;m also proficient in database design and
+                                    management, having worked extensively with both SQL and NoSQL solutions.
+                                </p>
+                                <p class="text-gray-700 mb-6 leading-relaxed">
+                                    When I&#x27;m not coding, you can find me hiking in the mountains, experimenting
+                                    with new cooking recipes, or contributing to open-source projects. I believe in
+                                    continuous learning and always stay updated with the latest trends and technologies
+                                    in the development world.
+                                </p>
+                                <div class="mt-10">
+                                    <h3 class="text-xl font-semibold mb-6">Education</h3>
+                                    <div class="space-y-6">
+                                        <div
+                                            class="p-4 border-l-4 border-primary-500 bg-gray-50 hover:shadow-md transition-shadow"
+                                        >
+                                            <h4 class="font-bold">Master of Computer Science</h4>
+                                            <p class="text-gray-600">Stanford University • 2014-2016</p>
+                                            <p class="mt-2 text-gray-700">
+                                                Specialized in AI and Machine Learning with a thesis on predictive
+                                                algorithms.
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="p-4 border-l-4 border-primary-500 bg-gray-50 hover:shadow-md transition-shadow"
+                                        >
+                                            <h4 class="font-bold">Bachelor of Engineering</h4>
+                                            <p class="text-gray-600">MIT • 2010-2014</p>
+                                            <p class="mt-2 text-gray-700">
+                                                Computer Science and Engineering with a minor in Mathematics.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="experience" class="py-16 bg-gray-50">
+                    <div class="container mx-auto px-4">
+                        <h2 class="text-3xl font-bold mb-12 text-center">Work Experience</h2>
+                        <div
+                            class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 before:to-transparent"
+                        >
+                            <div
+                                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary-500 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+                                >
+                                    <span class="material-symbols-outlined">work</span>
+                                </div>
+                                <div
+                                    class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                                >
+                                    <div class="flex items-center justify-between mb-1">
+                                        <h3 class="font-bold text-gray-800">Senior Full Stack Developer</h3>
+                                        <time class="text-xs text-gray-500">2020 - Present</time>
+                                    </div>
+                                    <p class="text-gray-600 mb-2">Tech Innovations Inc.</p>
+                                    <p class="text-gray-700">
+                                        Led the development of the company&#x27;s flagship product, improving
+                                        performance by 40%. Managed a team of 5 developers and implemented CI/CD
+                                        pipelines.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 mt-3">
+                                        <span class="px-3 py-1 text-xs bg-primary-100 text-primary-800 rounded-full"
+                                            >React</span
+                                        >
+                                        <span class="px-3 py-1 text-xs bg-primary-100 text-primary-800 rounded-full"
+                                            >Node.js</span
+                                        >
+                                        <span class="px-3 py-1 text-xs bg-primary-100 text-primary-800 rounded-full"
+                                            >AWS</span
+                                        >
+                                        <span class="px-3 py-1 text-xs bg-primary-100 text-primary-800 rounded-full"
+                                            >MongoDB</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary-500 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+                                >
+                                    <span class="material-symbols-outlined">work</span>
+                                </div>
+                                <div
+                                    class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                                >
+                                    <div class="flex items-center justify-between mb-1">
+                                        <h3 class="font-bold text-gray-800">Full Stack Developer</h3>
+                                        <time class="text-xs text-gray-500">2018 - 2020</time>
+                                    </div>
+                                    <p class="text-gray-600 mb-2">WebSolutions Co.</p>
+                                    <p class="text-gray-700">
+                                        Developed and maintained client projects, focusing on responsive design and
+                                        performance optimization. Collaborated with UX designers to implement intuitive
+                                        interfaces.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 mt-3">
+                                        <span class="px-3 py-1 text-xs bg-primary-100 text-primary-800 rounded-full"
+                                            >Vue.js</span
+                                        >
+                                        <span class="px-3 py-1 text-xs bg-primary-100 text-primary-800 rounded-full"
+                                            >Express</span
+                                        >
+                                        <span class="px-3 py-1 text-xs bg-primary-100 text-primary-800 rounded-full"
+                                            >PostgreSQL</span
+                                        >
+                                        <span class="px-3 py-1 text-xs bg-primary-100 text-primary-800 rounded-full"
+                                            >Docker</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
+                            >
+                                <div
+                                    class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary-500 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2"
+                                >
+                                    <span class="material-symbols-outlined">work</span>
+                                </div>
+                                <div
+                                    class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                                >
+                                    <div class="flex items-center justify-between mb-1">
+                                        <h3 class="font-bold text-gray-800">Frontend Developer</h3>
+                                        <time class="text-xs text-gray-500">2016 - 2018</time>
+                                    </div>
+                                    <p class="text-gray-600 mb-2">Digital Creations Agency</p>
+                                    <p class="text-gray-700">
+                                        Created responsive and cross-browser compatible websites for various clients.
+                                        Implemented animations and interactive elements to enhance user experience.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 mt-3">
+                                        <span class="px-3 py-1 text-xs bg-primary-100 text-primary-800 rounded-full"
+                                            >JavaScript</span
+                                        >
+                                        <span class="px-3 py-1 text-xs bg-primary-100 text-primary-800 rounded-full"
+                                            >CSS3</span
+                                        >
+                                        <span class="px-3 py-1 text-xs bg-primary-100 text-primary-800 rounded-full"
+                                            >HTML5</span
+                                        >
+                                        <span class="px-3 py-1 text-xs bg-primary-100 text-primary-800 rounded-full"
+                                            >jQuery</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="skills" class="py-16">
+                    <div class="container mx-auto px-4">
+                        <h2 class="text-3xl font-bold mb-12 text-center">Skills &amp; Expertise</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div
+                                class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-primary-500"
+                            >
+                                <div class="flex items-center mb-4">
+                                    <span class="material-symbols-outlined text-3xl text-primary-500 mr-3">code</span>
+                                    <h3 class="text-xl font-bold">Frontend Development</h3>
+                                </div>
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-700">React.js</span>
+                                            <span class="text-gray-600">95%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-700">Vue.js</span>
+                                            <span class="text-gray-600">85%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-700">CSS/SASS</span>
+                                            <span class="text-gray-600">90%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-700">Tailwind CSS</span>
+                                            <span class="text-gray-600">90%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-primary-500"
+                            >
+                                <div class="flex items-center mb-4">
+                                    <span class="material-symbols-outlined text-3xl text-primary-500 mr-3"
+                                        >database</span
+                                    >
+                                    <h3 class="text-xl font-bold">Backend Development</h3>
+                                </div>
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-700">Node.js</span>
+                                            <span class="text-gray-600">90%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-700">Express</span>
+                                            <span class="text-gray-600">85%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-700">MongoDB</span>
+                                            <span class="text-gray-600">80%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-700">SQL</span>
+                                            <span class="text-gray-600">75%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border-t-4 border-primary-500"
+                            >
+                                <div class="flex items-center mb-4">
+                                    <span class="material-symbols-outlined text-3xl text-primary-500 mr-3"
+                                        >settings</span
+                                    >
+                                    <h3 class="text-xl font-bold">DevOps &amp; Tools</h3>
+                                </div>
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-700">Git</span>
+                                            <span class="text-gray-600">95%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-700">Docker</span>
+                                            <span class="text-gray-600">80%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-700">AWS</span>
+                                            <span class="text-gray-600">70%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-gray-700">CI/CD</span>
+                                            <span class="text-gray-600">75%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-primary-500 h-2 rounded-full" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="projects" class="py-16 bg-gray-50">
+                    <div class="container mx-auto px-4">
+                        <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div
+                                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+                            >
+                                <div class="h-48 overflow-hidden">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1551434678-e076c223a692"
+                                        alt="E-commerce Platform"
+                                        class="w-full h-full object-cover hover:scale-105 transition-transform"
+                                        keywords="e-commerce, web development, online store"
+                                    />
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold mb-2">E-commerce Platform</h3>
+                                    <p class="text-gray-700 mb-4">
+                                        A full-featured e-commerce solution with payment processing, inventory
+                                        management, and analytics dashboard.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 text-xs bg-gray-200 rounded-full">React</span>
+                                        <span class="px-2 py-1 text-xs bg-gray-200 rounded-full">Node.js</span>
+                                        <span class="px-2 py-1 text-xs bg-gray-200 rounded-full">MongoDB</span>
+                                        <span class="px-2 py-1 text-xs bg-gray-200 rounded-full">Stripe</span>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <a
+                                            href="#"
+                                            class="text-primary-600 hover:text-primary-800 transition-colors flex items-center"
+                                        >
+                                            <span class="material-symbols-outlined mr-1">visibility</span> View Project
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="text-gray-700 hover:text-gray-900 transition-colors flex items-center"
+                                        >
+                                            <span class="material-symbols-outlined mr-1">code</span> Source Code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+                            >
+                                <div class="h-48 overflow-hidden">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1556155092-490a1ba16284"
+                                        alt="Task Management App"
+                                        class="w-full h-full object-cover hover:scale-105 transition-transform"
+                                        keywords="task management, productivity, app development"
+                                    />
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+                                    <p class="text-gray-700 mb-4">
+                                        A collaborative task management application with real-time updates, file
+                                        sharing, and progress tracking.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 text-xs bg-gray-200 rounded-full">Vue.js</span>
+                                        <span class="px-2 py-1 text-xs bg-gray-200 rounded-full">Express</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                content: ["./src/**/*.{html,js}"],
+                theme: {
+                    name: "Bluewave",
+                    fontFamily: {
+                        sans: [
+                            "Open Sans",
+                            "ui-sans-serif",
+                            "system-ui",
+                            "sans-serif",
+                            '"Apple Color Emoji"',
+                            '"Segoe UI Emoji"',
+                            '"Segoe UI Symbol"',
+                            '"Noto Color Emoji"'
+                        ]
+                    },
+                    extend: {
+                        fontFamily: {
+                            title: [
+                                "Lato",
+                                "ui-sans-serif",
+                                "system-ui",
+                                "sans-serif",
+                                '"Apple Color Emoji"',
+                                '"Segoe UI Emoji"',
+                                '"Segoe UI Symbol"',
+                                '"Noto Color Emoji"'
+                            ],
+                            body: [
+                                "Open Sans",
+                                "ui-sans-serif",
+                                "system-ui",
+                                "sans-serif",
+                                '"Apple Color Emoji"',
+                                '"Segoe UI Emoji"',
+                                '"Segoe UI Symbol"',
+                                '"Noto Color Emoji"'
+                            ]
+                        },
+                        colors: {
+                            neutral: {
+                                50: "#f7f7f7",
+                                100: "#eeeeee",
+                                200: "#e0e0e0",
+                                300: "#cacaca",
+                                400: "#b1b1b1",
+                                500: "#999999",
+                                600: "#7f7f7f",
+                                700: "#676767",
+                                800: "#545454",
+                                900: "#464646",
+                                950: "#282828"
+                            },
+                            primary: {
+                                50: "#f3f1ff",
+                                100: "#e9e5ff",
+                                200: "#d5cfff",
+                                300: "#b7a9ff",
+                                400: "#9478ff",
+                                500: "#7341ff",
+                                600: "#631bff",
+                                700: "#611bf8",
+                                800: "#4607d0",
+                                900: "#3c08aa",
+                                950: "#220174",
+                                DEFAULT: "#611bf8"
+                            }
+                        }
+                    },
+                    fontSize: {
+                        xs: ["12px", {lineHeight: "19.200000000000003px"}],
+                        sm: ["14px", {lineHeight: "21px"}],
+                        base: ["16px", {lineHeight: "25.6px"}],
+                        lg: ["18px", {lineHeight: "27px"}],
+                        xl: ["20px", {lineHeight: "28px"}],
+                        "2xl": ["24px", {lineHeight: "31.200000000000003px"}],
+                        "3xl": ["30px", {lineHeight: "36px"}],
+                        "4xl": ["36px", {lineHeight: "41.4px"}],
+                        "5xl": ["48px", {lineHeight: "52.800000000000004px"}],
+                        "6xl": ["60px", {lineHeight: "66px"}],
+                        "7xl": ["72px", {lineHeight: "75.60000000000001px"}],
+                        "8xl": ["96px", {lineHeight: "100.80000000000001px"}],
+                        "9xl": ["128px", {lineHeight: "134.4px"}]
+                    },
+                    borderRadius: {
+                        none: "0px",
+                        sm: "6px",
+                        DEFAULT: "12px",
+                        md: "18px",
+                        lg: "24px",
+                        xl: "36px",
+                        "2xl": "48px",
+                        "3xl": "72px",
+                        full: "9999px"
+                    },
+                    spacing: {
+                        0: "0px",
+                        1: "4px",
+                        2: "8px",
+                        3: "12px",
+                        4: "16px",
+                        5: "20px",
+                        6: "24px",
+                        7: "28px",
+                        8: "32px",
+                        9: "36px",
+                        10: "40px",
+                        11: "44px",
+                        12: "48px",
+                        14: "56px",
+                        16: "64px",
+                        20: "80px",
+                        24: "96px",
+                        28: "112px",
+                        32: "128px",
+                        36: "144px",
+                        40: "160px",
+                        44: "176px",
+                        48: "192px",
+                        52: "208px",
+                        56: "224px",
+                        60: "240px",
+                        64: "256px",
+                        72: "288px",
+                        80: "320px",
+                        96: "384px",
+                        px: "1px",
+                        0.5: "2px",
+                        1.5: "6px",
+                        2.5: "10px",
+                        3.5: "14px"
+                    }
+                },
+                plugins: [],
+                important: "#webcrumbs"
+            }
+        </script>
+    </body>
+</html>
